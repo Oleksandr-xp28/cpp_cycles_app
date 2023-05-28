@@ -6,7 +6,24 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a;
+    int product = 1;
+
+    cout << "Enter the value of a (1 <= a <= 20): ";
+    cin >> a;
+
+    if (a < 1 || a > 20) {
+        cout << "Invalid input for a. Exiting program." << endl;
+        return 1;
+    }
+
+    for (int i = a; i <= 20; i++) {
+        product *= i;
+    }
+
+    cout << "Product: " << product << endl;
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

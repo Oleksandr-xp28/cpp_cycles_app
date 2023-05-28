@@ -6,7 +6,19 @@ using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int sum = 0;
+    int count = 0;
+
+    for (int i = 1; i <= 1000; i++) {
+        sum += i;
+        count++;
+    }
+
+    double mean = (sum) / count;
+
+    std::cout << "Arithmetic Mean: " << mean << endl;
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
